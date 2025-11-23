@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench by Lorenzo Napolitano",
+	"textures": {
+		"0": "block/copper_button",
+		"particle": "block/copper_button"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 6],
+			"to": [11, 2, 10],
+			"faces": {
+				"north": {"uv": [6, 0, 12, 2], "texture": "#0"},
+				"east": {"uv": [6, 4, 10, 6], "texture": "#0"},
+				"south": {"uv": [6, 2, 12, 4], "texture": "#0"},
+				"west": {"uv": [6, 6, 10, 8], "texture": "#0"},
+				"up": {"uv": [6, 4, 0, 0], "texture": "#0"},
+				"down": {"uv": [6, 4, 0, 8], "texture": "#0"}
+			}
+		}
+	]
+}

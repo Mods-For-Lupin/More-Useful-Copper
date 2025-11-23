@@ -1,0 +1,40 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench by Lorenzo Napolitano",
+	"ambientocclusion": false,
+	"textures": {
+		"copper": "block/oxidized_copper_redstone_dust_line_overlay",
+		"particle": "block/copper_redstone_dust_dot",
+		"line": "block/copper_redstone_dust_line",
+		"overlay": "block/redstone_dust_overlay"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0.25],
+			"to": [16, 16, 0.25],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#line", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#line", "tintindex": 0}
+			}
+		},
+		{
+			"from": [0, 0, 0.275],
+			"to": [16, 16, 0.275],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#copper", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#copper", "tintindex": 0}
+			}
+		},
+		{
+			"from": [0, 0, 0.25],
+			"to": [16, 16, 0.25],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#overlay"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#overlay"}
+			}
+		}
+	]
+}

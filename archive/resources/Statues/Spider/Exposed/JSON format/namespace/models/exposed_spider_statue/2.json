@@ -1,0 +1,74 @@
+{
+	"textures": {
+		"0": "block/exposed_spider_statue"
+	},
+	"elements": [
+		{
+			"from": [3, 4, 2],
+			"to": [13, 12, 14],
+			"faces": {
+				"north": {
+					"uv": [1.5, 1.5, 2.75, 2.5],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [0, 1.5, 1.5, 2.5],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [4.25, 1.5, 5.5, 2.5],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [2.75, 1.5, 4.25, 2.5],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [2.75, 1.5, 1.5, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [4, 0, 2.75, 1.5],
+					"texture": "#0"
+				}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 0, 0],
+			"translation": [0, 1, 9],
+			"scale": [1, 1, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 0, 0],
+			"translation": [0, 1, 9],
+			"scale": [1, 1, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 0, 0],
+			"translation": [0, 1, 9],
+			"scale": [1, 1, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 0, 0],
+			"translation": [0, 1, 9],
+			"scale": [1, 1, 1]
+		},
+		"ground": {
+			"rotation": [0, 0, 0],
+			"translation": [0, 1, 9],
+			"scale": [1, 1, 1]
+		},
+		"gui": {
+			"rotation": [0, 0, 0],
+			"translation": [0, 1, 9],
+			"scale": [1, 1, 1]
+		},
+		"fixed": {
+			"rotation": [0, 0, 0],
+			"translation": [0, 1, 9],
+			"scale": [1, 1, 1]
+		}
+	}
+}

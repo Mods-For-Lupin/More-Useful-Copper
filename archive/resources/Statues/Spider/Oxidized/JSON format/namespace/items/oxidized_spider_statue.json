@@ -1,0 +1,51 @@
+{
+	"model": {
+		"type": "composite",
+		"models": [
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/0"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/1"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/2"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/3"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/4"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/5"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/6"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/7"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/8"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/9"
+			},
+			{
+				"type": "model",
+				"model": "minecraft:oxidized_spider_statue/10"
+			}
+		]
+	}
+}
