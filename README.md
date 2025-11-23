@@ -1,5 +1,7 @@
 # More-Useful-Copper `unused-local`
 
+![More Useful Copper Banner](http://www.bisecthosting.com/images/CF/More_Useful_Copper/BH_MUC_header.webp)
+
 > This branch should not be updated past the commit including this README.md change; this `unused-local` branch makes cloning our project into GitKraken slightly more straight-forward as we are creating worktrees from the other branches.
 
 ## You're probably looking for one of these:
