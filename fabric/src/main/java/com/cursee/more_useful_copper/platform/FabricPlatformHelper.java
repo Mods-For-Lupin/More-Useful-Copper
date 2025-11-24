@@ -2,7 +2,9 @@ package com.cursee.more_useful_copper.platform;
 
 import com.cursee.more_useful_copper.platform.services.IPlatformHelper;
 import java.nio.file.Path;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.world.item.CreativeModeTab.Builder;
 
 public class FabricPlatformHelper implements IPlatformHelper {
 
@@ -27,5 +29,10 @@ public class FabricPlatformHelper implements IPlatformHelper {
   @Override
   public Path getGameDirectory() {
     return FabricLoader.getInstance().getGameDir();
+  }
+
+  @Override
+  public Builder itemTabBuilder() {
+    return FabricItemGroup.builder();
   }
 }
