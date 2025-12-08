@@ -2,6 +2,7 @@ package com.cursee.more_useful_copper;
 
 import com.cursee.more_useful_copper.impl.common.registry.ModBlocks;
 import com.cursee.more_useful_copper.impl.common.registry.ModItems;
+import com.cursee.more_useful_copper.impl.common.registry.ModTabs;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import net.fabricmc.api.ModInitializer;
@@ -16,6 +17,7 @@ public class MoreUsefulCopperFabric implements ModInitializer {
 
     bind(BuiltInRegistries.BLOCK, ModBlocks::register);
     bind(BuiltInRegistries.ITEM, ModItems::register);
+    bind(BuiltInRegistries.CREATIVE_MODE_TAB, ModTabs::register);
 
     MoreUsefulCopper.init();
   }

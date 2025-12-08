@@ -5,11 +5,15 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import org.jetbrains.annotations.NotNull;
 
 public class CopperStatueBlock extends Block implements ModWeatheringCopper {
+
+  public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
   private final ModWeatheringCopper.WeatherState weatherState;
 

@@ -28,10 +28,10 @@ public class ModBlocks {
   public static Block WAXED_OXIDIZED_COPPER_STATUE;
 
   public static void register(BiConsumer<Block, ResourceLocation> consumer) {
-    COPPER_STATUE = new CopperStatueBlock(WeatherState.UNAFFECTED, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER));
-    EXPOSED_COPPER_STATUE = new CopperStatueBlock(WeatherState.EXPOSED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER));
-    WEATHERED_COPPER_STATUE = new CopperStatueBlock(WeatherState.WEATHERED, BlockBehaviour.Properties.of().mapColor(MapColor.WARPED_STEM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER));
-    OXIDIZED_COPPER_STATUE = new CopperStatueBlock(WeatherState.OXIDIZED, BlockBehaviour.Properties.of().mapColor(MapColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER));
+    COPPER_STATUE = new CopperStatueBlock(WeatherState.UNAFFECTED, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER).noOcclusion());
+    EXPOSED_COPPER_STATUE = new CopperStatueBlock(WeatherState.EXPOSED, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_LIGHT_GRAY).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER).noOcclusion());
+    WEATHERED_COPPER_STATUE = new CopperStatueBlock(WeatherState.WEATHERED, BlockBehaviour.Properties.of().mapColor(MapColor.WARPED_STEM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER).noOcclusion());
+    OXIDIZED_COPPER_STATUE = new CopperStatueBlock(WeatherState.OXIDIZED, BlockBehaviour.Properties.of().mapColor(MapColor.WARPED_NYLIUM).requiresCorrectToolForDrops().strength(3.0F, 6.0F).sound(SoundType.COPPER).noOcclusion());
 
     OXIDIZING_STATUE_BLOCKS = Lists.newArrayList(COPPER_STATUE, EXPOSED_COPPER_STATUE, WEATHERED_COPPER_STATUE, OXIDIZED_COPPER_STATUE);
 
