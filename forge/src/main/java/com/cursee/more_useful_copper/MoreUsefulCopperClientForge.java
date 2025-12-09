@@ -1,9 +1,14 @@
 package com.cursee.more_useful_copper;
 
+import com.cursee.more_useful_copper.impl.client.model.CopperStatueModel;
+import com.cursee.more_useful_copper.impl.client.renderer.entity.CopperStatueRenderer;
 import com.cursee.more_useful_copper.impl.common.registry.ModBlocks;
+import com.cursee.more_useful_copper.impl.common.registry.ModEntities;
 import java.util.function.Consumer;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.client.event.EntityRenderersEvent.RegisterLayerDefinitions;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
@@ -20,6 +25,14 @@ public class MoreUsefulCopperClientForge {
 //      });
       System.out.println("registered block render type");
       ItemBlockRenderTypes.setRenderLayer(ModBlocks.COPPER_STATUE, RenderType.cutout());
+    });
+
+    MoreUsefulCopperForge.eventBus.addListener((Consumer<EntityRenderersEvent.RegisterLayerDefinitions>) event -> {
+      event.registerLayerDefinition(CopperStatueModel.LAYER_LOCATION, CopperStatueModel::createBodyLayer);
+    });
+
+    MoreUsefulCopperForge.eventBus.addListener((Consumer<EntityRenderersEvent.RegisterRenderers>) event -> {
+      event.registerEntityRenderer(ModEntities.COPPER_STATUE, CopperStatueRenderer::new);
     });
   }
 }
